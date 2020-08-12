@@ -1,6 +1,5 @@
 {
   "name": "meteor-api-untethered",
-  "version": "1.0.0",
   "description": "A collection of packages to make Meteor available to other environments",
   "devDependencies": {
     "lerna": "^3.22.1"
