@@ -2,7 +2,15 @@
   "name": "meteor-api-untethered",
   "description": "A collection of packages to make Meteor available to other environments",
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "lerna": "^3.22.1",
+    "@typescript-eslint/eslint-plugin": "^3.9.0",
+    "eslint": "^7.6.0",
+    "eslint-config-standard-with-typescript": "^18.0.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "typescript": "^3.9.7"
   },
   "scripts": {
     "clean": "lerna run clean",
@@ -19,5 +27,32 @@
   "bugs": {
     "url": "https://github.com/Meteor-Community-Packages/meteor-api/issues"
   },
-  "homepage": "https://github.com/Meteor-Community-Packages/meteor-api#readme"
+  "homepage": "https://github.com/Meteor-Community-Packages/meteor-api#readme",
+  "eslintConfig": {
+    "extends": "standard-with-typescript",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "rules": {
+      "@typescript-eslint/restrict-template-expressions": "off",
+      "semi": [
+        2,
+        "always"
+      ],
+      "comma-dangle": [
+        2,
+        "always-multiline"
+      ]
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    },
+    "settings": {}
+  }
 }
