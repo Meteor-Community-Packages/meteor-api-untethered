@@ -1,7 +1,7 @@
 {
   "name": "@meteor-community/react-meteor-data",
   "version": "1.0.0",
-  "description": "Meteor's Core API made available for use outside of the Meteor toolchain",
+  "description": "Meteor's react-meteor-data package made available for use outside of the Meteor toolchain",
   "main": "dist/react-meteor-data.node.js",
   "module": "dist/react-meteor-data.esm.js",
   "unpkg": "dist/react-meteor-data.browser.js",
