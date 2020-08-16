@@ -1,0 +1,45 @@
+{
+  "name": "@meteor-community/react-meteor-data",
+  "version": "1.0.0",
+  "description": "Meteor's Core API made available for use outside of the Meteor toolchain",
+  "main": "dist/react-meteor-data.node.js",
+  "module": "dist/react-meteor-data.esm.js",
+  "unpkg": "dist/react-meteor-data.browser.js",
+  "jsdelivr": "dist/react-meteor-data.browser.js",
+  "browser": "dist/react-meteor-data.browser.js",
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run clean && rollup -c build/rollup.config.js",
+    "build:watch": "npm run clean && rollup -cw",
+    "clean": "rimraf -rf ./dist",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meteor-Community-Packages/meteor-api.git"
+  },
+  "keywords": [
+    "meteor"
+  ],
+  "author": "The Meteor Community",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Meteor-Community-Packages/meteor-api/issues"
+  },
+  "homepage": "https://github.com/Meteor-Community-Packages/meteor-api#readme",
+  "devDependencies": {
+    "rollup": "^2.21.0",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@wessberg/rollup-plugin-ts": "^1.3.2",
+    "rimraf": "^3.0.2",
+    "rollup-plugin-terser": "^7.0.0",
+    "ts-node-dev": "1.0.0-pre.57",
+    "typescript": "^3.9.7"
+  }
+}
