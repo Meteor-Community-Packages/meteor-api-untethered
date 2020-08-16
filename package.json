@@ -30,9 +30,6 @@
   "homepage": "https://github.com/Meteor-Community-Packages/meteor-api#readme",
   "eslintConfig": {
     "extends": "standard-with-typescript",
-    "parserOptions": {
-      "project": "./tsconfig.json"
-    },
     "rules": {
       "@typescript-eslint/restrict-template-expressions": "off",
       "semi": [
