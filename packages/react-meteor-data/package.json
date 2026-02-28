@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/Meteor-Community-Packages/meteor-api#readme",
   "devDependencies": {
-    "rollup": "^2.21.0",
+    "rollup": "^2.80.0",
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@wessberg/rollup-plugin-ts": "^1.3.2",
